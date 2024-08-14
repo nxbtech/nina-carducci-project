@@ -15,59 +15,31 @@
 	<meta property="og:site_name" content="Nina Carducci">
 	<meta property="og:locale" content="fr_FR">
 	<title>Nina Caducci - Photographe à Bordeaux</title>
+	
+	<!-- Inline Critical CSS -->
+	<style>
+		/* Ajoutez ici les styles critiques pour le rendu initial */
+		body, html {
+			margin: 0;
+			padding: 0;
+			font-family: 'Inter', sans-serif;
+		}
+		/* Autres styles critiques pour le rendu initial */
+	</style>
+
+	<!-- Google Fonts - Chargement différé avec préchargement -->
+	<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<noscript><link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet"></noscript>
+
 	<!-- Feuille de style critique (chargement normal) -->
 	<link rel="stylesheet" href="./assets/style.css">
 	<!-- Feuille de style non critique (chargement différé) -->
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" media="print" onload="this.media='all'">
+	<noscript><link rel="stylesheet" href="./assets/bootstrap/bootstrap.css"></noscript>
+
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="icon" href="assets/images/favicon.ico">
-	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
-	<script type="application/ld+json">
-		{
-		  "@context": "https://schema.org",
-		  "@type": "Service",
-		  "serviceType": "Photographie",
-		  "name": "Services de Photographie Professionnelle",
-		  "description": "Services de photographie professionnels couvrant les mariages, les événements, les portraits, et plus encore à Bordeaux.",
-		  "provider": {
-			"@type": "LocalBusiness",
-			"name": "Nina Carducci",
-			"image": "https://nina-carducci.github.io/assets/images/nina.png",
-			"telephone": "05 56 67 78 89",
-			"priceRange": "€€€",
-			"address": {
-			  "@type": "PostalAddress",
-			  "streetAddress": "68 avenue Alsace-Lorraine",
-			  "addressLocality": "Bordeaux",
-			  "addressRegion": "Nouvelle-Aquitaine",
-			  "postalCode": "33000",
-			  "addressCountry": "FR"
-			}
-		  },
-		  "areaServed": {
-			"@type": "Place",
-			"name": "Bordeaux, France"
-		  },
-		  "offers": {
-			"@type": "Offer",
-			"url": "https://nina-carducci.github.io/#services",
-			"priceCurrency": "EUR",
-			"price": "100.00",
-			"eligibleRegion": {
-			  "@type": "Place",
-			  "name": "Bordeaux, France"
-			},
-			"availability": "http://schema.org/InStock",
-			"validFrom": "2024-01-01"
-		  }
-		}
-		</script>
-
 </head>
 <body>
 <div class="top-header">
@@ -82,8 +54,8 @@
 		</ul>
 	</div>
 </div>
-<div id="header">
 
+<div id="header">
 	<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -111,17 +83,18 @@
 		</button>
 	</div>
 </div>
+
 <div id="about">
 	<div class="picture left">
-		<img src="assets/images/nina.webp">
+		<img src="assets/images/nina.webp" alt="Portrait de Nina Carducci">
 	</div>
 	<div id="about-me">
-		<h2 class="about-me__title">A propos de moi</h2>
-		<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
-		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre.
-			C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
+		<h2 class="about-me__title">À propos de moi</h2>
+		<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais prédestinée. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.</p>
+		<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, ou le partager au plus grand nombre. C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 	</div>
 </div>
+
 <div id="gallery">
 	<h2 class="title">Portfolio</h2>
 	<div class="container py-3">
@@ -146,34 +119,34 @@
 		</figure>
 	</div>
 </div>
+
 <div id="services">
 	<h2 class="title">Mes services</h2>
 	<div class="container">
 		<div class="service">
 			<div class="service__description">
 				<h3>Shooting photo</h3>
-				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
+				<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos.</p>
 			</div>
 			<div class="service__price">
-				<h4>350€/demi journée</h4>
+				<h4>350€/demi-journée</h4>
 				<span>Matériel, déplacement inclus</span>
 			</div>
-
 		</div>
 		<div class="service">
 			<div class="service__description">
 				<h3>Retouches</h3>
-				<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
+				<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficiez d’un rendu optimal pour vos publications.</p>
 			</div>
 			<div class="service__price">
 				<h4>50€/photo</h4>
-				<span>2 AR par photo</span>
+				<span>2 allers-retours par photo</span>
 			</div>
 		</div>
 		<div class="service">
 			<div class="service__description">
 				<h3>Album photos</h3>
-				<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
+				<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé.</p>
 			</div>
 			<div class="service__price">
 				<h4>400€ album A4</h4>
@@ -182,14 +155,16 @@
 		</div>
 	</div>
 </div>
+
 <div class="quote">
 	<figure>
 		<blockquote>
-			<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
+			<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie.</p>
 		</blockquote>
 		<figcaption class="quote__author">- Richard Avedon</figcaption>
 	</figure>
 </div>
+
 <div id="contact">
 	<div class="container">
 		<div class="form-container">
@@ -213,5 +188,10 @@
 		</div>
 	</div>
 </div>
+
+<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+<script src="./assets/maugallery.js" defer></script>
+<script src="./assets/scripts.js" defer></script>
 </body>
 </html>
