@@ -358,3 +358,27 @@ input[type="submit"] {
 #gallery img {
 	height: 430px !important;
 }
+
+.modal-dialog {
+    max-width: 100%;
+    margin: 0;
+}
+
+.modal-content {
+    background: transparent;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.modal-body img.lightboxImage {
+    width: 500px;
+    max-height: 80vh;
+    object-fit: contain;
+    margin: 0 auto;
+}
