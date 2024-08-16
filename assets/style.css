@@ -382,3 +382,20 @@ input[type="submit"] {
     object-fit: contain;
     margin: 0 auto;
 }
+
+#carouselExampleIndicators {
+    height: 860px;
+}
+
+#carouselExampleIndicators {
+    height: 860px; /* Hauteur définie pour éviter les décalages */
+}
+
+/* Ajout du swap pour les polices */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('https://fonts.gstatic.com/s/inter/v13/rnCr-xNNw.woff2') format('woff2');
+}
