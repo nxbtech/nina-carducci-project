@@ -1,4 +1,3 @@
-
 body
 {
 	max-width: 1920px;
@@ -17,7 +16,7 @@ body
 .top-header
 {
 	background-color: white;
-	position: sticky;
+
 	top:0;
 	z-index: 1000;
 	display: flex;
@@ -54,6 +53,7 @@ color: #000}
 {
 	width: 20px;
 }
+
 
 /****************************************************
 ******               ABOUT                    *******
@@ -498,15 +498,8 @@ padding: .5em 1em}
 	margin: 0 auto;
 }
 
-#carouselExampleIndicators
-{
-	height: 860px;
-}
-
-#carouselExampleIndicators
-{
-	height: 860px;
-	/* Hauteur définie pour éviter les décalages */
+#carouselExampleIndicators {
+    height: 95%; /* Hauteur en pourcentage par rapport au conteneur parent */
 }
 
 /* Ajout du swap pour les polices */
@@ -519,39 +512,34 @@ padding: .5em 1em}
 	src: url('https://fonts.gstatic.com/s/inter/v13/rnCr-xNNw.woff2') format('woff2');
 }
 
-.carousel-image
-{
-	max-width: 100%;
-	height: auto;
-	object-fit: cover;
+.carousel-image {
+    max-width: 100%;
+    height: 90vh;
+    object-fit: cover;
 }
 
-@media (max-width: 1200px)
-{
-	.carousel-image
-	{
-		height: auto;
-		/* Hauteur automatique pour les écrans plus petits */
-		width: 100%;
-	}
+@media (max-width: 1200px) {
+    .carousel-image {
+        height: auto; /* Hauteur automatique pour les écrans plus petits */
+        width: auto;
+    }
 }
 
-@media (max-width: 768px)
-{
-	.carousel-image
-	{
-		height: auto;
-		/* Hauteur automatique pour les écrans de taille moyenne */
-		width: 100%;
-	}
+@media (max-width: 768px) {
+    .carousel-image {
+        height: auto; /* Hauteur automatique pour les écrans de taille moyenne */
+        width: auto;
+    }
 }
 
-@media (max-width: 576px)
-{
-	.carousel-image
-	{
-		height: auto;
-		/* Hauteur automatique pour les petits écrans */
-		width: 100%;
-	}
+@media (max-width: 576px) {
+    .carousel-image {
+        height: auto; /* Hauteur automatique pour les petits écrans */
+        width: auto;
+    }
+}
+
+#header {
+	height: 90vh;
+	position: relative;
 }
