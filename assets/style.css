@@ -543,3 +543,6 @@ padding: .5em 1em}
 	height: 90vh;
 	position: relative;
 }
+.nav-pills .nav-link {
+    cursor: pointer;
+}
